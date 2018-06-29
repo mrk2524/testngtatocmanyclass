@@ -5,13 +5,12 @@ import org.openqa.selenium.WebDriver;
 
 public class BasicCourseClick {
 	public WebDriver driver = null;
-	public void GreenBox(WebDriver driver) {
+	public BasicCourseClick(WebDriver driver) {
 		this.driver= driver;
 	}
-	By clickgreenbox =By.className("greenbox");
+	By clickbasiccourse =By.linkText("Basic Course");
 	public void action() {
-		driver.findElement(clickgreenbox).click();
-		System.out.println(" Successfully clicked on Green Box");
+		driver.findElement(clickbasiccourse).click();
+		System.out.println(" Successfully click on Basic Course");
 	}
-
 }
